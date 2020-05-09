@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My music</title>
+        <link href="variables.css" rel="stylesheet">
     </head>
     <style>
         body
@@ -10,8 +11,51 @@
           margin: 20px;
           padding: 20px;
         }
+        input [type=text]{
+          background-color: green;
+        }
+        .col  {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          border:3px solid black;
+        }
+        img.resize{
+          max-width: 50%;
+          max-height: 50%;
+        }
       </style>
     <body>
-      <h1> Music </h1>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">My Music</h1>
+          <p class="lead">This is a short list of some of my favorite songs.</p>
+        </div>
+      </div>
+
+      <div class="container_2">
+        <div class="row">
+          <div class="col"><a href = "https://www.youtube.com/watch?v=hVkBlsgthLg"> Superstar-Lupe Fiasco </a>
+            <span class="d-block p-2 bg-primary text-white">d-block</span>
+            <img src="Superstar.jpg" .w-100>
+          </div>
+          <div class="col"><a href = "https://www.youtube.com/watch?v=wc7JPaRV5uU"> Shot for me-Drake </a>
+            <img src="Drake.jpg" >
+          </div>
+          <div class="w-100"></div>
+          <div class="col"><a href = "https://www.youtube.com/watch?v=NY8IS0ssnXQ"> Chamber of Reflection-Mac DeMarco </a>
+            <img src="Chamberofreflection.jpg" >
+          </div>
+          <div class="col"><a href = "https://www.youtube.com/watch?v=VMc64pxNnQs"> Chase Dem-Stephen Marley </a>
+            <img src="Chase dem.jpg" >
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <input name= "name" type="text" placeholder="favorite song?">
+        <button>Submit!</button>
+      </form>
     </body>
 </html>

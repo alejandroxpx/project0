@@ -2,31 +2,86 @@
 <html>
     <head>
         <title>My Webpage</title>
-        <link rel="stylesheet" = href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
       <style>
-          body
-          {
+          body{
             background-color:#ccc;
-            margin: 20px;
             padding: 20px;
           }
-      </style>
+          #top{
+            background-color: purple;
+            background-image: url('https://teamlpw.com/wp-content/uploads/2019/09/olympic_weightlifting_400x400-400x400.jpg');
+            width: 400px;
+            height: 400px;
+          }
+          #middle_1{
+            background-color: red;
+            background-image: url('https://pbs.twimg.com/profile_images/909817481497214976/FYoGTOvN_400x400.jpg');
+            width: 400px;
+            height: 400px;
+          }
+          #middle_2{
+            background-color: orange;
+            background-image: url('https://www.etkbands.com/wp-content/uploads/2018/06/SAXOPHONE-BAS-1287-01-400x400.jpg');
+            width: 400px;
+            height: 400px;
+          }
+          #bottom{
+            background-color: silver;
+            background-image: url('https://live.staticflickr.com/8109/8464699982_25d67631b6.jpg');
+            width: 400px;
+            height: 400px;
+          }
+          p::selection{
+            color: red;
+            background-color: yellow;
+          }
+          .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+          }
+          button:hover{
+            background-color: red;
+          }
+          button{
+            width:100px;
+            height: 50px;
+            font-size: 20px;
+          }
+          @media (max-width: 600px){
+            body
+            {
+              background-color: black;
+            }
+          }
 
+      </style>
     <body>
-        <h1> Hello, world! </h1>
-        <p> My name is Alejandro Pasillas. Thank you for
+        <h1 style="text-align:center";> Hello, world! </h1>
+        <p  style="text-align:center";> My name is Alejandro Pasillas. Thank you for
           viewing my website. <p>
-          <form>
-            <div>
-                <input name= "feedback" type="text" placeholder="What are you thinking?">
-                <button>Submit!</button>
+
+          <div class="container">
+            <div id="top">
+              <a href= "hobbies.html"> <button> Hobbies </button> </a>
             </div>
-          </form>
-        <ol>
-            <li> <a href= "hobbies.html"> Hobbies </a> </li>
-            <li> <a href= "Education.html"> Education </a> </li>
-            <li> <a href= "Music.html"> Music </a> </li>
-            <li> <a href= "Other.html"> Other </a> </li>
+            <div id="middle_1">
+              <a href= "Education.html"> <button> Education </button> </a>
+            </div>
+            <div id="middle_2">
+              <a  href= "Music.html"> <button> Music </button></a>
+            </div>
+
+            <div id="bottom">
+              <a href= "Other.html"> <button> Other </button> </a>
+            </div>
+        </div>
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Well done!</h4>
+          <p>You made it to the bottom! Thanks for going through my page and learning a little bit about me.</p>
+        </div>
     </body>
 </html>
