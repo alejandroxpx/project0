@@ -1,4 +1,4 @@
-$font: sans-serif;
+$font: helvetica;
 
 a{
   font: $font;
@@ -7,4 +7,35 @@ a{
 p{
   font: $font;
   font-size: 14px;
+}
+div{
+  ol{
+    color:blue;
+  }
+  ul{
+    color: green;
+  }
+}
+%sub{
+  font-family:sans-serif;
+  font-size: 18px;
+  border: 1px solid black;
+  padding:20px;
+  margin:20px;
+}
+.travel{
+  @extend %sub;
+  background-color: orange;
+}
+.pets{
+  @extend %sub;
+  background-color: #99833d;
+}
+.food{
+  @extend %sub;
+  background-color: #C8604A;
+}
+.cars{
+  @extend %sub;
+  background-color: #91E33A;
 }

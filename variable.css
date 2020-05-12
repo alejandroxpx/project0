@@ -1,9 +1,33 @@
 a {
-  font: sans-serif;
+  font: helvetica;
   font-size: 14px; }
 
 p {
-  font: sans-serif;
+  font: helvetica;
   font-size: 14px; }
+
+div ol {
+  color: blue; }
+div ul {
+  color: green; }
+
+.travel, .pets, .food, .cars {
+  font-family: sans-serif;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px; }
+
+.travel {
+  background-color: orange; }
+
+.pets {
+  background-color: #99833d; }
+
+.food {
+  background-color: #C8604A; }
+
+.cars {
+  background-color: #91E33A; }
 
 /*# sourceMappingURL=variable.css.map */
